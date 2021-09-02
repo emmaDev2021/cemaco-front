@@ -1,0 +1,104 @@
+.custom-fluid-container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header .header-tabs-1.no-gutters {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+header .header-tabs-1 img {
+  width: 80px;
+}
+
+.header-tabs-1 .helper {
+  display: table-cell;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.header-tabs-1 .cemaco-logo-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: #101E8E;
+  border-radius: 15px 15px 0 0;
+}
+
+.header-bar{
+  background-color: #101E8E;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-bar .logo img{
+  width: 180px;
+  margin-left: 5px;
+}
+
+.header-bar .search-bar {
+  width: 60%;
+  margin: auto
+}
+
+.input-buscar input {
+  border-radius: 25px 0 0 25px;
+}
+
+.input-buscar .input-group-append {
+  border-radius: 0 25px 25px 0;
+}
+
+.input-buscar .input-group-append i {
+  color: #101E8E;
+}
+
+.bg-cemaco-green {
+  background-color: #93D500 !important;
+}
+
+.color-cemaco-green {
+  color: #93D500 !important;
+}
+
+.border-cemaco-green {
+  border-color: #93D500 !important;
+}
+
+.close-color {
+  color: #cc0000;
+}
+
+.header-bar .cemaco-options {
+  font-size: 50px;
+  margin: auto;
+  width: 100%;
+}
+
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+
+.box .rw.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .rw.content {
+  flex: 1 1 auto;
+}
+
+.box .rw.footer {
+  flex: 0 1 40px;
+}
