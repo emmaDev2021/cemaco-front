@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+<br/>
+<p align="center">
+  <a href="https://github.com/emmaDev2021/cemaco-app">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Prueba tecnica-CEMACO</h3>
 
-## Available Scripts
+  <p align="center">
+    pagina react para prueba tecnica
+    <br/>
+    <br/>
+    <a href="https://github.com/emmaDev2021/cemaco-app"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://github.com/emmaDev2021/cemaco-app">View Demo</a>
+    .
+    <a href="https://github.com/emmaDev2021/cemaco-app/issues">Report Bug</a>
+    .
+    <a href="https://github.com/emmaDev2021/cemaco-app/issues">Request Feature</a>
+  </p>
+</p>
 
-In the project directory, you can run:
+![Downloads](https://img.shields.io/github/downloads/emmaDev2021/cemaco-app/total) ![Contributors](https://img.shields.io/github/contributors/emmaDev2021/cemaco-app?color=dark-green) ![Issues](https://img.shields.io/github/issues/emmaDev2021/cemaco-app) ![License](https://img.shields.io/github/license/emmaDev2021/cemaco-app) 
 
-### `yarn start`
+## Table Of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## About The Project
 
-### `yarn test`
+![Screen Shot](images/screenshot.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
-### `yarn build`
+Here's why:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Your time should be focused on creating something amazing. A project that solves a problem and helps others
+* You shouldn't be doing the same tasks over and over like creating a README from scratch
+* You should element DRY principles to the rest of your life :smile:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
-### `yarn eject`
+## Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+This is an example of how to list things you need to use the software and how to install them.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* npm
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+npm install npm@latest -g
+```
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+git clone https://github.com/emmaDev2021/cemaco-front.git
+```
 
-### Analyzing the Bundle Size
+3. Install NPM packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+npm install
+```
