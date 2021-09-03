@@ -6,15 +6,8 @@
   <p align="center">
     pagina react para prueba tecnica
     <br/>
+    Emmanuel Vasquez
     <br/>
-    <a href="https://github.com/emmaDev2021/cemaco-app"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
-    <a href="https://github.com/emmaDev2021/cemaco-app">View Demo</a>
-    .
-    <a href="https://github.com/emmaDev2021/cemaco-app/issues">Report Bug</a>
-    .
-    <a href="https://github.com/emmaDev2021/cemaco-app/issues">Request Feature</a>
   </p>
 </p>
 
