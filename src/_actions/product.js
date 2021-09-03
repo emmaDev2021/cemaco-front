@@ -89,6 +89,7 @@ export const postProductFailed = () => ({
 });
 
 export const patchProduct = ({
+  id,
   nombre,
   description,
   precio,
@@ -98,6 +99,7 @@ export const patchProduct = ({
 }) => ({
   type: types.PATCH_PRODUCT,
   payload: {
+    id,
     nombre,
     description,
     precio,

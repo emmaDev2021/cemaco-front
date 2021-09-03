@@ -24,14 +24,14 @@ const RenderPermit = ({permit}) => (<>
 
 const User = ({
   user_info,
-    authLogOut,
+  authLogOut,
 }) => {
   return <>
     <h1>Informacion del usuario</h1>
     <ListGroup style={{maxWidth: '50%'}}>
       <ListGroupItem className="justify-content-between">Usuario: <b>{user_info.username}</b></ListGroupItem>
       <ListGroupItem className="justify-content-between">email: <b>{user_info.email}</b></ListGroupItem>
-      <ListGroupItem className="justify-content-between">Usuario: <b>{user_info.role_name}</b></ListGroupItem>
+      <ListGroupItem className="justify-content-between">Rol: <b>{user_info.role_name}</b></ListGroupItem>
       <ListGroupItem className="justify-content-between">Permisos: 
          <List type="unstyled">
           <li>Crear Productos: <RenderPermit permit={user_info.post}/></li>

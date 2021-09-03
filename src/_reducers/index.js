@@ -22,3 +22,5 @@ export const getRoles = (state) => loginHandler.getRoles(state.login);
 
 export const getProductLoading = (state) => productHandler.getLoading(state.product);
 export const getPublicProducts = (state) => productHandler.getPublicProducts(state.product);
+export const getProducts = (state) => productHandler.getProducts(state.product);
+export const getProduct = (state) => productHandler.getProduct(state.product);

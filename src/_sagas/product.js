@@ -109,6 +109,7 @@ function* postProduct(action){
 function* patchProduct(action){
   try{
     const {
+      id,
       nombre,
       description,
       precio,
@@ -117,16 +118,19 @@ function* patchProduct(action){
       imagen,
     } = action.payload;
     const token = yield select(reducers.getToken);
+    const realImage = imagen.name ? imagen : null;
     const response = yield call(
       api.patchProduct,
       token,
+      id,
       nombre,
       description,
       precio,
       SKU,
       inventario,
-      imagen,
-    )
+      realImage,
+    );
+    console.log(imagen)
     yield put(actions.patchProductConfirm());
     yield put(createNotification(successAlert(response.msg)));
     yield delay(500);

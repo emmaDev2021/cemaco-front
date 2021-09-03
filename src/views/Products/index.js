@@ -99,7 +99,7 @@ class Products extends React.Component {
 export default connect(
   (state) => ({
     loading: selectors.getProductLoading(state),
-    products: state.product.products,
+    products: selectors.getProducts(state),
   }),
   dispatch => ({
     getProducts(){

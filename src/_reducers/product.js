@@ -148,3 +148,5 @@ export default product;
 
 export const getPublicProducts = (state) => state.publicProducts;
 export const getLoading = (state) => state.loading;
+export const getProducts = (state) => state.products;
+export const getProduct = (state) => state.product;

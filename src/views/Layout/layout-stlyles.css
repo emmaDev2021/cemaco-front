@@ -102,3 +102,17 @@ header .header-tabs-1 img {
 .box .rw.footer {
   flex: 0 1 40px;
 }
+
+.footerbar h6 {
+  margin-bottom: 0.8rem;
+}
+
+.footerbar p {
+  font-size: 11px;
+  margin-bottom: 0.2rem;
+}
+
+.footerbar .footerSocial i {
+  font-size: 20px;
+  margin-right: 10px;
+}

@@ -68,6 +68,7 @@ export const postProduct = async (
 
 export const patchProduct = async (
   token,
+  id,
   nombre,
   description,
   precio,
@@ -83,7 +84,7 @@ export const patchProduct = async (
   data.append('inventario',inventario);
   if(imagen) data.append('imagen',imagen);
   return await instance.patch(
-    'products/',
+    `products/${id}`,
     data,
     {
       headers: {

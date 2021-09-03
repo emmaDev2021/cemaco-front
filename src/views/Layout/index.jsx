@@ -12,12 +12,23 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faSearch,
-  faShoppingCart
+  faShoppingCart,
+  faPhoneAlt,
+  faCommentAlt
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faUserCircle,
   faHeart,
+  faEnvelope
 } from '@fortawesome/free-regular-svg-icons';
+import {
+  faWhatsapp,
+  faFacebookF,
+  faInstagram,
+  faYoutube,
+  faTwitter,
+  faPinterest,
+} from '@fortawesome/free-brands-svg-icons';
 import {
   Switch,
   Route,
@@ -36,6 +47,9 @@ import PublicProducts from '../Public_Products';
 import User from '../User';
 import Register from '../Register';
 import Products from '../Products';
+import Product from '../Products/NewProduct';
+import PatchProduct from '../Products/PatchProduct';
+import Home from '../Home';
 
 const PrivateRoute = ({ 
   component: Component,
@@ -70,24 +84,24 @@ class Layout extends React.Component {
             <Row className="header-tabs-1 no-gutters">
               <Col xs={4} md={{ size: 2, offset: 3 }} className="helper">
                 <img 
-                  src="images_jugueton.png" 
+                  src={`${process.env.PUBLIC_URL}/images_jugueton.png`}
                   alt="images_jugueton" 
                 />
               </Col>
               <Col xs={4} md={2} className="helper cemaco-logo-header">
                 <NavLink to={'/'}>
-                  <img src="cemaco.svg" alt="cemaco-svg" />
+                  <img src={`${process.env.PUBLIC_URL}/cemaco.svg`} alt="cemaco-svg" />
                 </NavLink>
               </Col>
               <Col xs={4} md={2} className="helper">
-                <img src="images_bebe-jugueton.png" alt="images_bebe-jugueton" />
+                <img src={`${process.env.PUBLIC_URL}/images_bebe-jugueton.png`} alt="images_bebe-jugueton" />
               </Col>
             </Row>
             <div className="header-bar ">
               <Row className="container-sm m-auto">
                 <Col xs={12} md={3} className="logo">
                   <NavLink to={'/'}>
-                    <img src="cemaco.svg" alt="cemaco-svg" className="pt-2" />
+                    <img src={`${process.env.PUBLIC_URL}/cemaco.svg`} alt="cemaco-svg" className="pt-2" />
                   </NavLink>
                 </Col>
                 <Col xs={12} md={6}>
@@ -106,7 +120,7 @@ class Layout extends React.Component {
                     </InputGroup>
                   </FormGroup>
                 </Col>
-                <Col xs={12} md={3} className="">
+                <Col xs={12} md={3} className="mt-2">
                   <Row>
                     <Col xs={{size: 3, offset: 3}}>
                       <NavLink to={!token ? '/login' : '/user'}>
@@ -158,16 +172,71 @@ class Layout extends React.Component {
         </header>
         <Container className="rw content">
           <Switch>
-            <Route exact path="/" component={() => <h2>Home</h2>} />
+            <Route exact path="/" component={() => <Home/>} />
             <Route exact path="/public-inventory" component={() => <PublicProducts />} />
             <PrivateRoute exact path="/user" component={User} token={token} />
             <PrivateRoute exact path="/manage-inventory" component={Products} token={token} />
+            <PrivateRoute exact path="/manage-inventory/new" component={Product} token={token} />
+            <PrivateRoute exact path="/manage-inventory/:id" component={PatchProduct} token={token} />
             <NoSessionRoute exact path="/login" component={Login} token={token} />
             <NoSessionRoute exact path="/register" component={Register} token={token} />
           </Switch>
         </Container>
         <div className="rw footer">
-          <p><b>footer</b> (fixed height)</p>
+          <div className="custom-fluid-container" >
+            <div className="header-bar ">
+              <Row 
+                className="container-sm m-auto text-light mt-5 mb-5 footerbar"
+              >
+                <Col>
+                  <h6>Servicios</h6>
+                  <p>Instalaciones</p>
+                  <p>Tiendas</p>
+                  <p>Privilegio</p>
+                  <p>Servicio a Empresas</p>
+                  <p>Bodas</p>
+                </Col>
+                <Col>
+                  <h6>Venta en línea</h6>
+                  <p>Retira en tienda</p>
+                  <p>Métodos de pago</p>
+                  <p>Preguntas frecuentes</p>
+                  <p>Privacidad y seguridad</p>
+                  <p>Términos y condiciones</p>
+                </Col>
+                <Col>
+                  <h6>Nuestros Valores</h6>
+                  <p>Sostenibilidad</p>
+                  <p>Garantía Total</p>
+                  <p>Certificación Sistema B</p>
+                </Col>
+                <Col>
+                  <h6>Grupo CEMACO</h6>
+                  <p>Únete a nuestro equipo</p>
+                  <p>Sobre nosotros</p>
+                  <p>Deseas ser proveedor</p>
+                  <p>Juguetón</p>
+                  <p>Bebé Juguetón</p>
+                </Col>
+                <Col>
+                  <h6>Mantente conectado</h6>
+                  <p><FontAwesomeIcon icon={faWhatsapp} /> Compra por WhatsApp</p>
+                  <p><FontAwesomeIcon icon={faPhoneAlt} /> (502) 2499-9990</p>
+                  <p><FontAwesomeIcon icon={faEnvelope} /> tusamigos@cemaco.com</p>
+                  <p><FontAwesomeIcon icon={faCommentAlt} /> Chat en línea</p>
+                  <br></br>
+                  <br></br>
+                  <div className="footerSocial">
+                    <i><FontAwesomeIcon icon={faFacebookF} /></i>
+                    <i><FontAwesomeIcon icon={faInstagram} /></i>
+                    <i><FontAwesomeIcon icon={faYoutube} /></i>
+                    <i><FontAwesomeIcon icon={faTwitter} /></i>
+                    <i><FontAwesomeIcon icon={faPinterest} /></i>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </div>
         </div>
     </div>;
   }
