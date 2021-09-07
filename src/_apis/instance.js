@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: `http://localhost:3000/api/`
+  baseURL: `http://147.182.216.49:3000/api/`
 });
 
-export const imagesURL = 'http://localhost:3000/';
+export const imagesURL = 'http://147.182.216.49:3000/';
